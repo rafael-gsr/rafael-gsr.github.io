@@ -14,12 +14,11 @@ font-family: 'Roboto Mono', monospace;
     padding: 0px;
 }
 
-html{
+html,body{
     height: auto;
 }
 
 body{
-    height: auto;
     background: rgb(1,9,80);
     background: linear-gradient(0deg, rgba(1,9,80,1) 0%, rgba(61,179,173,1) 100%);
     background-repeat:no-repeat;

@@ -1,0 +1,124 @@
+/* 
+font-family: 'Combo', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Roboto Mono', monospace;
+ */
+
+
+*{
+    color:white;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: auto;
+    background: rgb(1,9,80);
+    background: linear-gradient(0deg, rgba(1,9,80,1) 0%, rgba(61,179,173,1) 100%);
+    background-repeat:no-repeat;
+}
+
+.foto_perfil{
+    margin-top: 20px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0 0 7px white;
+    border: 1px solid white ;    
+}
+
+h1{
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 20px;
+    font-size: 200%;
+    font-weight: 300;
+    font-style: italic;
+    margin: 10px 0px;
+}
+
+h2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    letter-spacing: 10px;
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.introducao{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 
+as imagens de redes sociais e os 
+nomes para estarem alinhados, é necessário
+estabelecer o position das imagens em relative
+e do nome em absolute
+coloquei o padding dos nomes em auto também
+*/
+
+.social-images{
+    width: 30px;
+    display: inline;
+    margin-right: 5px;
+    position: relative;
+}
+
+.lista_links li a {
+    text-decoration: none;
+    color:rgb(39, 39, 85);
+    font-family: 'Prompt', serif;
+    font-weight: 600;
+    letter-spacing: 6px;
+    font-size:18px;
+
+}
+
+.lista_links li{
+    background-color: white;
+    margin: 15px;
+    padding: 13px 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px white;
+
+}
+
+.lista_links li span{
+    margin: 4px 0px;
+    display: block;
+    text-decoration: none;
+    color:rgb(51, 51, 51);
+    letter-spacing: 2px;
+    font-size:80%;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.div_lista_links{
+    margin: 30px 0px;
+}
+
+
+.social-names{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-family: 'Prompt', serif;
+    font-weight: 600;
+    letter-spacing: 6px;
+    font-size:95%;
+    display: inline;
+    position: absolute;
+    margin-top: 2px;
+    padding: auto;
+    margin-left: 4px;
+}

@@ -1,0 +1,106 @@
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif; 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:'Poppins', sans-serif;
+    /* font-family: 'PT Sans Narrow', sans-serif; 
+    font-family: 'Montserrat', sans-serif; */
+}
+
+html,body{
+    background-color: gray;
+}
+
+.header{
+    color: white;
+    display: flex;
+    height: 60px;
+    background-color: rgb(31, 31, 31);
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px black;
+}
+.titulo{
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    text-shadow:0 0 2px white ;
+}
+.subtitulo{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    display: flex;
+    position: absolute;
+    top: 31px;
+    left: 233px;
+    text-shadow:0 0 1px black ;
+    color: rgb(170, 170, 170);
+}
+.logo{
+    display: flex;
+    height: 60px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    position: relative;
+}
+.menu li a {
+    display: block  ;
+    text-decoration: none;
+    padding: 17px;
+    color: white;
+}
+
+.menu > li:hover{
+    color: black;
+    background-color: rgb(87, 255, 199);
+    box-shadow: 0 0 3px aquamarine;
+}
+
+.menu > li:hover > a,
+.submenu > li:hover > a{
+    color: black;
+    background-color:rgb(87, 255, 199) ;
+    box-shadow: 0 0 3px aquamarine;   
+}
+
+.menu > li:hover > .submenu{
+    background-color: rgb(116, 231, 193);
+    color: black;
+    display: block;
+}
+
+.submenu > li:hover > .submenu{
+    background-color: rgb(116, 231, 193);
+    color: black;
+    display: block;
+}
+
+.submenu li .submenu{
+    left: -112px;
+    top:0;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+
+}
+.submenu li{
+    position: relative;
+    background-color: aquamarine;
+}
+.submenu li a{
+    color: black;
+
+}

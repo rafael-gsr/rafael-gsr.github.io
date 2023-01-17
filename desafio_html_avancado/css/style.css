@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(/CURSO_DEVFS/HTML_AVANCADO/DESAFIO01/img/background.png);
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

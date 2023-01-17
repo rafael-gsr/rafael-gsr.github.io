@@ -1,0 +1,77 @@
+/* font-family: 'Lato', sans-serif; */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    background-image: url(/CURSO_DEVFS/HTML_AVANCADO/DESAFIO01/img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+body,html{
+    width:auto;
+    height: 100%;
+}
+
+.img_logo{
+    margin: 10px;
+}
+
+.titulo{
+    font-size: 55px;
+}
+
+.subtitulo{
+    font-size: 30px;
+}
+
+.descricao{
+    font-size: 22px;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin: 0px auto auto auto;
+    padding: 80px 0px 0px 0px;
+}
+
+.formulario{
+    margin-top: 25px;
+}
+
+.input_nome,.input_email,.botao{
+    width: 100%;
+    padding: 13px 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+}
+
+.input_email{
+    margin-bottom: 20px;
+}
+
+.input_nome,.input_email{
+    background-color: white;
+}
+
+.botao{
+    background-color: rgb(0, 81, 255);
+    margin-top: 30px;
+}
+
+.botao:hover{
+    background-color: rgb(96, 136, 223);
+}

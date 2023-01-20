@@ -66,6 +66,7 @@ body,html{
 
 .input_nome,.input_email{
     background-color: white;
+    color:black;
 }
 
 .botao{

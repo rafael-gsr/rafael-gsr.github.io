@@ -1,0 +1,307 @@
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sofia Sans Semi Condensed', sans-serif;  
+font-family: 'Domine', serif;
+font-family: 'Chango', cursive;
+font-family: 'Marko One', serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Seymour One', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    background: rgb(95, 95, 95);
+    background: linear-gradient(
+        54deg,
+        rgb(85, 113, 129) 0%,
+        rgb(15, 25, 34) 100%
+    );
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .element_titulo {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .titulo_pagina {
+        font-family: "Seymour One", cursive;
+        font-size: 180%;
+        letter-spacing: 7px;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+        .logotipo {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            width: fit-content;
+            margin: 40px auto 0px auto;
+            display: flex;
+            text-shadow: 0 0 2px rgb(102, 102, 102);
+
+            .imagem_logo {
+                height: 180px;
+
+                @media (max-width:1100px) {
+                    margin-top: 15px;
+                    height: 150px;
+                }
+                @media (max-width:900px) {
+                    margin-top: 10px;
+                    height: 100px;
+                }
+                @media (max-width:580px) {
+                    margin-top: 0px;
+                    margin-top: 0px;
+                    height: 80px;
+                }
+                @media (max-width:425px) {
+                    margin-top: 0px;
+                    height: 60px;
+                }
+                @media (max-width:375px) {
+                    margin-top: 0px;
+                    height: 50px;
+                }
+            }
+        }
+        .rede_social {
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: white;
+            font-family: "Gloria Hallelujah", cursive;
+            font-weight: 200;
+            font-size: 16px;
+
+            display: flex;
+            margin: 0 auto;
+            justify-content: end;
+
+            @media (max-width:10000px) {
+                font-size: 16px;
+                padding-right: 132px;
+            }
+            @media (max-width:1400px) {
+                font-size: 15px;
+                padding-right: 42px;
+            }
+            @media (max-width:1100px) {
+                font-size: 13px;
+                padding-right: 0px;
+            }
+            @media (max-width:900px) {
+                font-size: 10px;
+                padding-right: 0px;
+
+            }
+            @media (max-width:580px) {
+                font-size: 9px;
+                padding-right: 0px;
+
+            }
+            @media (max-width:425px) {
+                font-size: 7px;
+                padding-right: 0px;
+
+            }
+            @media (max-width:375px) {
+                font-size: 6px;
+                padding-right: 0px;
+            }
+        }
+
+        .subtitulo_pagina {
+            color: white;
+            text-align: center;
+            font-size: 19px;
+            padding: 5px 0px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 100;
+            letter-spacing: 3px;
+            margin: 15px;
+
+            @media (max-width:1100px) {
+                font-size: 15px;
+            }
+            @media (max-width:900px) {
+                font-size: 14px;
+                padding-right: 0px;
+
+            }
+            @media (max-width:580px) {
+                font-size: 11px;
+                padding: 0px;
+                margin: 10px 0;
+
+
+            }
+            @media (max-width:425px) {
+                font-size: 9px;
+                padding: 0px;
+                margin: 10px 0;
+
+            }
+            @media (max-width:375px) {
+                font-size: 6px;
+                padding: 0px;
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+
+    .container {
+        color: white;
+
+        ul {
+            display: block;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                color: white;
+                width: 50%;
+                min-width: 50%;
+                margin: 35px auto;
+
+
+                @media (max-width:1100px) {
+                    margin: 35px auto;
+                }
+                @media (max-width:900px) {
+                    margin: 20px auto;
+                }
+                @media (max-width:580px) {
+                    margin: 15px auto;
+                }
+                @media (max-width:425px) {
+                    margin: 10px auto;
+                }
+                @media (max-width:375px) {
+                    margin: 5px auto;
+                }
+
+                li {
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    display: block;
+                    list-style: none;
+                    color: white;
+                    background-color: rgba(15, 25, 34, 0.548);
+                    padding: 13px;
+
+                    border-radius: 10px;
+                    width: 100%;
+
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 500;
+                    font-size: 18px;
+
+                    @media (max-width:1100px) {
+                        font-size: 16px;
+                        padding: 13px;
+                    }
+                    @media (max-width:900px) {
+                        font-size: 14px;
+                        padding: 11px;
+                    }
+                    @media (max-width:580px) {
+                        font-size: 13px;
+                        padding: 9px;
+                    }
+                    @media (max-width:425px) {
+                        font-size: 11px;
+                        padding: 8px;
+                    }
+                    @media (max-width:375px) {
+                        font-size: 8px;
+                        padding: 7px;
+                    }
+                
+
+                    .descricao_itens {
+                        display: flex;
+                        font-weight: 300;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 200;
+                        padding-top: 10px;
+                        padding-bottom: 5px;
+                        font-size: 17px;
+                        text-align: center;
+                        justify-content: center;
+
+
+                        @media (max-width:1100px) {
+                            font-size: 16px;
+                        }
+                        @media (max-width:900px) {
+                            font-size: 14px;
+                        }
+                        @media (max-width:580px) {
+                            font-size: 12px;
+                        }
+                        @media (max-width:425px) {
+                            font-size: 10px;
+                        }
+                        @media (max-width:375px) {
+                            font-size: 7px;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .icones_projetos {
+                        @media (max-width:1100px) {
+                            padding-right: 10px;
+                        }
+                        @media (max-width:900px) {
+                            padding-right: 8px;
+                        }
+                        @media (max-width:580px) {
+                            padding-right: 6px;
+                        }
+                        @media (max-width:425px) {
+                            padding-right: 4px;
+                        }
+                        @media (max-width:375px) {
+                            padding-right: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container > ul > a > li:hover {
+        box-shadow: 0 0 8px rgb(97, 175, 206);
+        text-shadow: 0 0 4px rgb(97, 175, 206);
+        background-color: rgba(15, 25, 34, 0.301);
+    }
+}

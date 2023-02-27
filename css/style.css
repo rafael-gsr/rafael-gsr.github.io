@@ -1,0 +1,160 @@
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sofia Sans Semi Condensed', sans-serif;  
+font-family: 'Domine', serif;
+font-family: 'Chango', cursive;
+font-family: 'Marko One', serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Seymour One', sans-serif;
+*/
+
+
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+html,body{
+    background: rgb(95, 95, 95);
+    background: linear-gradient(54deg, rgb(85, 113, 129) 0%, rgb(15, 25, 34) 100%);
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100% !important;
+    overflow-x: visible;
+    display: inline-block;
+}
+
+.element_titulo{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+
+.descricao_itens{
+    display: flex;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 2  00;
+    padding-top: 10px;
+    padding-bottom: 5px ;
+    font-size: 17px;
+    text-align: center;
+    justify-content: center;
+}
+
+.rede_social{
+    letter-spacing: 2px;
+    text-decoration: none;
+    color:white;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 200;
+    font-size: 16px;
+
+    display: flex;
+    margin: 0 auto;
+    padding-right: 42px;
+    justify-content: end;
+
+
+}
+
+.titulo_pagina{
+    font-family: 'Seymour One', cursive;
+    font-size: 180%;
+    letter-spacing: 7px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.imagem_logo{
+    margin-top: 15px;
+    height:180px;
+}
+
+.subtitulo_pagina{
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    padding: 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin: 15px;
+
+}
+
+.logotipo{
+    text-align:center;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    margin: 40px auto 0px auto;
+    display: flex;
+    text-shadow: 0 0 2px rgb(102, 102, 102);
+
+}
+
+.container{
+    color: white;
+}
+
+.container ul a li{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    list-style: none;
+    color: white;
+    background-color: rgba(15, 25, 34, 0.548);
+    padding: 13px;
+
+    border-radius: 10px;
+    width: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.container > ul > a > li:hover{
+    box-shadow: 0 0 8px rgb(97, 175, 206);
+    text-shadow: 0 0 4px rgb(97, 175, 206);
+    background-color: rgba(15, 25, 34, 0.301);
+}
+
+.container ul{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.container ul a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    width: 50%;
+    min-width: 50%;
+    margin: 35px auto;
+}
+
+.icones_projetos{
+    padding-right: 10px;
+}

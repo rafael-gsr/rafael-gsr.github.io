@@ -1,0 +1,36 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    .cont{
+        margin-top: 20vh;
+        text-align: center;
+
+        .pergunta{
+            text-align: center;
+            color: gray;
+            
+        }
+
+        #botoes{
+            margin-top: 20px;
+            align-items: center;
+            text-align: center;
+            
+            #botao_sim, #botao_nao{
+                position: absolute;
+                margin: 0 10px;
+            }
+            #botao_sim{
+                left: 20vw
+            }
+            #botao_nao{
+                left: 50vw
+            }
+        }
+    }
+}

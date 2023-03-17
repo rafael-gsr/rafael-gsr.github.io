@@ -14,18 +14,18 @@ font-family: 'Roboto Mono', monospace;
     padding: 0px;
 }
 
-html,body{
-    height: 100%;
-}
-
 body{
     background: rgb(1,9,80);
     background: linear-gradient(0deg, rgba(1,9,80,1) 0%, rgba(61,179,173,1) 100%);
     background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
 }
 
 .foto_perfil{
-    margin-top: 20px;
+    margin-top: 50px;
     width: 180px;
     border-radius: 50%;
     box-shadow: 0 0 7px white;
@@ -58,6 +58,7 @@ ul{
     margin-bottom: 25px;
 }
 
+
 /* 
 as imagens de redes sociais e os 
 nomes para estarem alinhados, é necessário
@@ -68,35 +69,54 @@ coloquei o padding dos nomes em auto também
 
 .social-images{
     width: 30px;
-    display: inline;
-    margin-right: 5px;
-    position: relative;
+    padding-right: 10px;
+}
+
+.lista_links{
+    width: 80vh;
 }
 
 .lista_links li a {
+    font-style: bold;
+    background-color: rgb(236, 236, 236);
+    text-shadow: 0 0 3px rgba(194, 194, 194, 0.623);
+    text-align: center;
     text-decoration: none;
     color:rgb(39, 39, 85);
     font-family: 'Prompt', serif;
     font-weight: 600;
     letter-spacing: 6px;
     font-size:18px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid rgba(61,179,173,0.2);
+}
+
+.lista_links ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.lista_links li a:hover{
+    background-color: rgb(231, 255, 254);
+    box-shadow: 0 0 5px white;
+    text-shadow: 0 0 2px rgba(80, 236, 229, 0.575);
+    border: 2px solid rgba(61,179,173,0.4);
 
 }
 
 .lista_links li{
-    background-color: white;
-    margin: 15px;
-    padding: 13px 20px;
+    display: flex;
+    padding: 20px;
     border-radius: 25px;
-    box-shadow: 0 0 10px white;
-
 }
 
 .lista_links li span{
     margin: 4px 0px;
     display: block;
     text-decoration: none;
-    color:rgb(51, 51, 51);
+    color:rgb(34, 34, 34);
     letter-spacing: 2px;
     font-size:80%;
     font-weight: 500;
@@ -104,9 +124,16 @@ coloquei o padding dos nomes em auto também
 }
 
 .div_lista_links{
+    display: flex;
+    justify-content: center;
     margin: 30px 0px;
 }
 
+.titulo_redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .social-names{
     text-decoration: none;
@@ -115,9 +142,4 @@ coloquei o padding dos nomes em auto também
     font-weight: 600;
     letter-spacing: 6px;
     font-size:95%;
-    display: inline;
-    position: absolute;
-    margin-top: 2px;
-    padding: auto;
-    margin-left: 4px;
 }

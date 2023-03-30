@@ -1,0 +1,48 @@
+@mixin iconesRedondos($tipo){
+    display: flex;
+    border-radius: 50px;
+    padding: 17px;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    justify-content: center;
+
+    @if $tipo == padrao{
+        background-color: $color-dark-blue;
+        color: $color-light-grey;
+
+    }@else if $tipo == laranja{
+        background-color: $color-orange;
+        color: $color-white;
+    
+    } @else if $tipo == invertido{
+        color: $color-orange;
+        background-color: $color-white;
+    
+    } @else if $tipo == selecionado{
+        background-color: $color-light-grey;
+        color: $color-white;
+    
+    }
+}
+
+@mixin padroesBg($tipo){
+
+    @if $tipo == padrao{
+        background-color: $color-dark-blue;
+        color: $color-light-grey;
+
+    }@else if $tipo == laranja{
+        background-color: $color-orange;
+        color: $color-white;
+    
+    } @else if $tipo == invertido{
+        color: $color-orange;
+        background-color: $color-white;
+    
+    } @else if $tipo == selecionado{
+        background-color: $color-light-grey;
+        color: $color-white;
+    
+    }
+}

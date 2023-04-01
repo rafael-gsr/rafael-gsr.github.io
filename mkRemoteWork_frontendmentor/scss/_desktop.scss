@@ -1,0 +1,226 @@
+@import 'variables';
+@import 'mixins';
+@import 'keyframes';
+
+
+@media (min-width:1100px){
+    *{
+        margin: 0;
+        padding: 0;
+
+        body{
+            font-family: 'Epilogue', sans-serif;
+            color:$medium-gray ;
+            background-color: $almost-white;
+
+            header{
+                width: 100vw;
+                margin-bottom: 60px;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                color: $medium-gray;
+            
+                .sandwich{
+                    display: none;
+                }
+
+                .logoDesk{
+                    height: fit-content;
+                    width: 90px;
+                    align-self: center;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+
+                .divNav{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .navigationBar{
+                        display: flex;
+
+                        .menu{
+                            display: flex;
+                            list-style: none;
+                            .nav-item{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                cursor: pointer;
+                                padding: 15px 22px;
+                                margin: 0px 20px;
+                                list-style: none;
+                                text-decoration: none;
+                                border-radius: 10px;
+
+                                a{
+                                    align-items: center;
+                                    transition: all 300ms;
+                                    color: $medium-gray;
+                                    text-decoration: none;
+                                    margin-right: 5px;
+                                }
+                                .arrow{
+                                    margin-left: 5px;
+                                    height: fit-content;
+                                    align-self: center;
+                                    width:18px;
+                                    transition: all 300ms;
+                                    transform: rotate(360deg);
+                            }
+                                .submenu{
+                                    position: absolute;
+                                    height: 0;
+                                    transition: 300ms;
+                                    overflow-y: hidden;
+                                    padding: 0px;
+                                    border-radius: 10px;
+                                    margin: 25px 0px;
+
+                                    .submenuItem{
+                                        margin: 13px 6px;
+                                    }
+                                }
+
+                                &:hover a{
+                                    transition: all 300ms;
+                                    color: $almost-black;
+                                }
+
+                                &:hover{
+                                    transition: all 300ms;
+                                    color: $almost-black;
+                                }
+
+                                &:hover > .arrow{
+                                    transition: all 300ms;
+                                    transform: rotate(180deg);
+                                    filter: brightness(0);
+                                }
+                                &:hover > .submenu{
+                                    padding: 10px;
+                                    display: block;
+                                    color: $almost-black;
+                                    // animation: surgeItem 300ms ease;
+                                    height: auto !important;
+                                    cursor: pointer;
+                                    background-color: $white;
+
+                                    box-shadow: 1px 1px 11px 0px hsl(0deg,0%,79.53%);
+                                    .submenuItem{
+                                        padding: 3px;
+                                        display: flex;
+                                        align-items: center;
+                                        a{
+                                            text-decoration: none;
+                                            color: $almost-black ;
+                                        }
+                                        img{
+                                            height: 16px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    .loginRegister{
+                        display: flex;
+                        list-style: none;
+                        align-self: center;
+                        cursor: pointer;
+
+                        .loginItem{
+                            display: flex;
+                            a{
+                                padding: 15px 22px;
+                                margin: 0px 10px;
+                                color: $medium-gray ;
+                                text-decoration: none;
+                                border-radius: 15px;
+
+
+                                &:last-child{
+                                    border: $medium-gray solid 2px;
+                                    margin-right: 20px;
+                                }                        
+                                &:hover:last-child{
+                                    transition: all 300ms;
+                                    border: $almost-black solid 2px;
+                                    color: $almost-black;
+                                }
+
+                                &:hover{
+                                    transition: all 300ms;
+                                    color: $almost-black;
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+            .content{
+                justify-content: space-between;
+                width: 80vw;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row-reverse;
+                .imageHero{
+                    width: 500px;
+                    height: auto;
+                }
+                .text {
+                    width: 43%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .titulo{
+                        margin-top: 80px;
+                        color: $black;
+                        font-size: 74px;
+                    }
+                    .description{
+                        line-height: 30px;
+                        font-size: 18px;
+                    }
+                    .learnMoreButton{
+                        background-color: $almost-black;
+                        color: $almost-white;
+                        border: $almost-black solid 2px;
+
+                        transition: all 300ms;
+                        width: fit-content;
+                        padding: 20px 30px;
+                        border-radius: 20px;
+                        cursor: pointer;
+
+                        &:hover{
+                            transition: all 300ms;
+                            background-color: $almost-white;
+                            color: $almost-black;
+                            width: fit-content;
+                            padding: 20px 30px;
+                            border-radius: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                    .clients{
+                        display: flex;
+                        justify-content: space-between;
+                        img{
+                            height: fit-content;
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

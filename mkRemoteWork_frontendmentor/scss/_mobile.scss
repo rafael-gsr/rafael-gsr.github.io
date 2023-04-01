@@ -1,0 +1,221 @@
+@media (max-width: 1099px){
+    *{
+        margin: 0;
+        padding:0;
+        body{
+            width: 100vw;
+            background-color: $almost-white;
+            color: $medium-gray;
+            font-family: 'Epilogue', sans-serif;
+
+            header{
+                overflow: hidden;
+
+                margin-top: 30px;
+                display: flex;
+
+                .sandwichDiv{
+                    margin: 20px;
+                    position: fixed;
+                    right: 20px;
+                    top: 10px;
+                    z-index: 10000;
+                    width: 30px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 300ms;
+                    .sandwichActive{
+                        transition: all 200ms;
+                        content: url(../images/icon-close-menu.svg);
+                    }
+                }
+
+                .rotate{
+                    transform: rotate(180deg);
+                    transition: 300ms;
+                }
+
+                .logoDesk{
+                    height: fit-content;
+                    width: 90px;
+                    align-self: center;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+
+                .divActive{
+                    transition: all 300ms ease;
+                    width: 60vw !important;
+                    box-shadow: 0px 0px 100px 5px black;
+                }
+
+                .divNav{
+                transition: all 300ms ease;
+                overflow: hidden;
+                background-color: $white;
+                height: 100vh;
+                width: 0px;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                right: 0;
+                top: 0px;
+                overflow-x: hidden;
+
+                    .navigationBar{
+                        margin-top: 50px;
+
+                        .menu{
+                            padding: 30px;
+                            list-style: none;
+                            transition: all 500ms;
+
+                            .nav-item{
+                                margin: 30px 0;
+
+                                a{
+                                    list-style: none;
+                                    text-decoration: none;
+                                    color: $medium-gray;}
+                                .arrow{
+
+                                    transition: all 300ms;
+                                    height: 9px;
+                                    transform: rotate(360deg);
+
+                                }
+
+                                &:hover a{
+                                    transition: all 300ms;
+                                    color: $almost-black;
+                                }
+
+                                &:hover{
+                                    transition: all 300ms;
+                                    color: $almost-black;
+                                }
+                                .arrowActive{
+                                    transition: all 300ms;
+                                    transform: rotate(180deg);
+                                    filter: brightness(0);
+                                }
+                                .submenu{
+                                    display: flex;
+                                    flex-direction: column;
+                                    height: 0;
+                                    list-style: none;
+                                    overflow-y: hidden;
+
+                                    .submenuItem{
+
+                                        img{
+                                            margin-right: 3px;
+                                        }
+                                    }
+                                }
+
+                                .submenuActive{
+                                    height: auto !important;                                    
+                                    .submenuItem{
+                                        margin: 20px 0 0px 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                    .loginRegister{
+                        list-style: none;
+                        .loginItem{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            a{
+                                margin: 5px auto;
+                                width: 120px;
+                                align-items: center;
+                                text-align: center;
+                                padding: 10px 20px;
+                                list-style: none;
+                                text-decoration: none;
+                                color: $medium-gray;
+                                border-radius: 15px;                                
+                                &:last-child{
+                                    border: $medium-gray solid 2px;
+                                }    
+
+                                &:hover:last-child{
+                                    transition: all 300ms;
+                                    border: $almost-black solid 2px;
+                                    color: $almost-black;
+                                }
+
+                                &:hover{
+                                    transition: all 300ms;
+                                    color: $almost-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .content{
+                .imageHero{
+                    content: url(../images/image-hero-mobile.png);
+
+                    margin: 20px 0;
+                    width: 100%;
+                }
+                .text{
+                    padding: 10px;
+                    .titulo{
+                        margin: 20px 0;
+                        text-align: center;
+                        font-size: 37px;
+                        color: $almost-black;
+                        font-weight: 700;
+                    }
+                    .description{
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 17px;
+                    }
+                    .learnMoreButton{
+                        background-color: $almost-black;
+                        color: $almost-white;
+                        border: $almost-black solid 2px;
+                        margin: 40px auto;
+                        font-weight: 700;
+
+                        transition: all 300ms;
+                        width: fit-content;
+                        padding: 10px 20px;
+                        border-radius: 15px;
+                        cursor: pointer;
+
+                        &:hover{
+                            transition: all 300ms;
+                            background-color: $almost-white;
+                            color: $almost-black;
+                        }
+                    }
+                    .clients{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        img{
+                            padding: 4px;
+                            width: auto;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rafael-gsr.github.io/static/css/main.40189a02.css",
+    "main.js": "/rafael-gsr.github.io/static/js/main.afa7c826.js",
+    "static/media/oficinaedit.jpg": "/rafael-gsr.github.io/static/media/oficinaedit.ca7932bc956d3647a228.jpg",
+    "static/media/logo_vetor.png": "/rafael-gsr.github.io/static/media/logo_vetor.a7a1efab3a9daca90d96.png",
+    "index.html": "/rafael-gsr.github.io/index.html",
+    "main.40189a02.css.map": "/rafael-gsr.github.io/static/css/main.40189a02.css.map",
+    "main.afa7c826.js.map": "/rafael-gsr.github.io/static/js/main.afa7c826.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40189a02.css",
+    "static/js/main.afa7c826.js"
+  ]
+}
